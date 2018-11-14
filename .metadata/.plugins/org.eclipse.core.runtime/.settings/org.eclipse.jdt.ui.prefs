@@ -1,0 +1,16 @@
+content_assist_disabled_computers=org.eclipse.jdt.ui.textProposalCategory\u0000org.eclipse.recommenders.calls.rcp.proposalCategory.templates\u0000org.eclipse.mylyn.java.ui.javaAllProposalCategory\u0000org.eclipse.jdt.ui.javaAllProposalCategory\u0000org.eclipse.jdt.ui.javaTypeProposalCategory\u0000org.eclipse.jdt.ui.javaNoTypeProposalCategory\u0000org.eclipse.recommenders.chain.rcp.proposalCategory.chain\u0000
+content_assist_lru_history=<?xml version\="1.0" encoding\="UTF-8" standalone\="no"?><history maxLHS\="100" maxRHS\="10"><lhs name\="javax.sql.CommonDataSource"><rhs name\="com.mchange.v2.c3p0.ComboPooledDataSource"/></lhs><lhs name\="java.sql.Wrapper"><rhs name\="com.mchange.v2.c3p0.ComboPooledDataSource"/></lhs><lhs name\="javax.sql.DataSource"><rhs name\="com.mchange.v2.c3p0.ComboPooledDataSource"/></lhs><lhs name\="org.apache.commons.dbutils.AbstractQueryRunner"><rhs name\="org.apache.commons.dbutils.QueryRunner"/></lhs><lhs name\="org.apache.commons.dbutils.QueryRunner"><rhs name\="org.apache.commons.dbutils.QueryRunner"/></lhs><lhs name\="org.apache.commons.dbutils.ResultSetHandler"><rhs name\="org.apache.commons.dbutils.handlers.BeanHandler"/></lhs><lhs name\="java.lang.Cloneable"><rhs name\="java.util.Date"/></lhs><lhs name\="java.util.Date"><rhs name\="java.util.Date"/></lhs><lhs name\="java.io.Closeable"><rhs name\="java.io.FileInputStream"/></lhs><lhs name\="java.lang.AutoCloseable"><rhs name\="java.io.FileInputStream"/></lhs><lhs name\="java.io.InputStream"><rhs name\="java.io.FileInputStream"/></lhs></history>
+content_assist_number_of_computers=24
+content_assist_proposals_background=255,255,255
+content_assist_proposals_foreground=0,0,0
+eclipse.preferences.version=1
+org.eclipse.jdt.internal.ui.navigator.layout=2
+org.eclipse.jdt.internal.ui.navigator.librariesnode=true
+org.eclipse.jdt.ui.formatterprofiles.version=14
+org.eclipse.jdt.ui.text.code_templates_migrated=true
+org.eclipse.jdt.ui.text.custom_code_templates=<?xml version\="1.0" encoding\="UTF-8" standalone\="no"?><templates/>
+org.eclipse.jdt.ui.text.custom_templates=<?xml version\="1.0" encoding\="UTF-8" standalone\="no"?><templates><template autoinsert\="true" context\="java" deleted\="false" description\="" enabled\="true" name\="servlet">package ${enclosing_package};&\#13;\r\nimport java.io.IOException;&\#13;\r\nimport javax.servlet.ServletException;&\#13;\r\nimport javax.servlet.http.HttpServlet;&\#13;\r\nimport javax.servlet.http.HttpServletRequest;&\#13;\r\nimport javax.servlet.http.HttpServletResponse;&\#13;\r\n&\#13;\r\npublic class ${primary_type_name} extends HttpServlet {&\#13;\r\n&\#13;\r\n\tpublic void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {&\#13;\r\n\t\tresponse.getWriter().write("hello haohao...");&\#13;\r\n\t}&\#13;\r\n&\#13;\r\n\tpublic void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {&\#13;\r\n\t\tdoGet(request, response);&\#13;\r\n\t}&\#13;\r\n}&\#13;\r\n</template></templates>
+org.eclipse.jdt.ui.text.templates_migrated=true
+spelling_locale_initialized=true
+useAnnotationsPrefPage=true
+useQuickDiffPrefPage=true

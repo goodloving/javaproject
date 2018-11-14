@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>注册页面</title>
+		<style>
+			a{
+				text-decoration: none;
+			}
+		</style>
+		<script>
+			function chechForm(){
+				// 用户名检查
+				var uValue = document.getElementById("user").value;
+				if(uValue == ""){
+					alert("用户名不能为空");
+					return false;
+				}
+				// 检查密码
+				var pValue = document.getElementById("psw").value;
+				if(pValue==""){
+					alert("密码不能为空");
+					return false;
+				}
+				// 检查密码是否一致
+				var rpValue = document.getElementById("rpsw").value;
+				if(rpValue!=pValue){
+					alert("密码不一致");
+					return false;
+				}
+				// 检查邮箱
+				var eValue = document.getElementById("email").value;
+				if(!/^([a-zA-Z0-9_-])+@([a-zA-Z0-9_-])+(.[a-zA-Z0-9_-])+/.test(eValue)){
+					alert("邮箱格式不正确");
+					return false;
+				}
+				
+			}
+			
+			function changeImg(obj){
+				obj.src="/HttpRequestStudy/checkImg?time="+new Date().getTime();
+			}
+			
+		</script>
+	</head>
+	<body>
+		<table width="100%">
+			<tr>
+				<td>
+					<table border="0px" width="100%">
+						<tr height="50px">
+							<td width="33.3%">
+								<img src="img/logo2.png" height="100%" />
+							</td>
+							<td width="33.3%">
+								<img src="img/header.png" height="100%" />
+							</td>
+							<td width="33.3%" align="center">
+								<a href="#">登录</a>
+								<a href="#">注册</a>
+								<a href="#">购物车</a>
+							</td>
+						</tr>
+					</table>
+				</td>
+			</tr>
+			<tr>
+				<td bgcolor="black" height="60px">
+					&nbsp;&nbsp;&nbsp;&nbsp;
+					<a href="#"><font size="5" color="antiquewhite">首页</font></a> &nbsp;&nbsp;&nbsp;&nbsp;
+					<a href="#"><font size="5" color="antiquewhite">手机数码</font></a> &nbsp;&nbsp;&nbsp;&nbsp;
+					<a href="#"><font size="5" color="antiquewhite">电脑办公</font></a> &nbsp;&nbsp;&nbsp;&nbsp;
+					<a href="#"><font size="5" color="antiquewhite">鞋靴箱包</font></a> &nbsp;&nbsp;&nbsp;&nbsp;
+					<a href="#"><font size="5" color="antiquewhite">家用电器</font></a> &nbsp;&nbsp;&nbsp;&nbsp;
+				</td>
+			</tr>
+			<tr>
+				<td width="100%" height="600px" background="img/regist_bg.jpg">
+					<form action="/HttpRequestStudy/register" method="post" name="regist" onsubmit="return chechForm()">
+						<table align="center" bgcolor="white" height="500px" width="650px" >
+							<tr height="10%">
+								<td colspan="2">
+									&nbsp;&nbsp;&nbsp;
+									<font size="6">会员注册</font>&nbsp;&nbsp;
+									USER REGISTER
+								</td>
+							</tr>
+							<tr>
+								<td>
+									&nbsp;&nbsp;&nbsp;&nbsp;
+									用户名
+								</td>
+								<td>
+									<input type="text" name="user" size="34px" id="user"/>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									&nbsp;&nbsp;&nbsp;&nbsp;
+									密码
+								</td>
+								<td>
+									<input type="password" name="psw" size="34px" id="psw"/>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									&nbsp;&nbsp;&nbsp;&nbsp;
+									确认密码
+								</td>
+								<td>
+									<input type="password" name="repsw" size="34px" id="rpsw"/>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									&nbsp;&nbsp;&nbsp;&nbsp;
+									电话号码
+								</td>
+								<td>
+									<input type="text" name="tel" size="34px" id="tel"/>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									&nbsp;&nbsp;&nbsp;&nbsp;
+									Email
+								</td>
+								<td>
+									<input type="email" name="email" size="34px" id="email"/>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									&nbsp;&nbsp;&nbsp;&nbsp;
+									姓名
+								</td>
+								<td>
+									<input type="text" name="username" size="34px"/>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									&nbsp;&nbsp;&nbsp;&nbsp;
+									性别
+								</td>
+								<td>
+									<input type="radio" name="gender" value="男"/>男
+									<input type="radio" name="gender" value="女"/>女
+								</td>
+							</tr>
+							<tr>
+								<td>
+									&nbsp;&nbsp;&nbsp;&nbsp;
+									出生日期
+								</td>
+								<td>
+									<input type="text" name="date" size="34px"/>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									&nbsp;&nbsp;&nbsp;&nbsp;
+									验证码
+								</td>
+								<td>
+									<input type="text"/>
+									<img onclick="changeImg(this)" src="/HttpRequestStudy/checkImg" align="center"/>
+								</td>
+							</tr>
+							<tr>
+								<td colspan="2" align="center">
+									<input type="submit" value="注册" />
+								</td>
+							</tr>
+						</table>
+					</form>
+				</td>
+			</tr>
+			<tr>
+				<td align="center">
+					<img src="img/footer.jpg" height="100%" width="100%"/>
+				</td>
+			</tr>
+			<tr align="center">
+				<td>
+					<a href="#"><font size="3" color="blue">关于我们</font></a>&nbsp;&nbsp;
+					<a href="#"><font size="3" color="blue">联系我们</font></a>&nbsp;&nbsp;
+					<a href="#"><font size="3" color="blue">招贤纳士</font></a>&nbsp;&nbsp;
+					<a href="#"><font size="3" color="blue">法律声明</font></a>&nbsp;&nbsp;
+					<a href="#"><font size="3" color="blue">友情链接</font></a>&nbsp;&nbsp;
+					<a href="#"><font size="3" color="blue">支付方式</font></a>&nbsp;&nbsp;
+					<a href="#"><font size="3" color="blue">配送方式</font></a>&nbsp;&nbsp;
+					<a href="#"><font size="3" color="blue">服务声明</font></a>&nbsp;&nbsp;
+					<a href="#"><font size="3" color="blue">广告声明</font></a><br /><br />
+					<font>Copyright @ 2008-2018 传智商城 版权所有</font>
+				</td>
+			</tr>
+		</table>
+	</body>
+</html>

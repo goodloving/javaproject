@@ -20,6 +20,16 @@ public class LoginServlet extends HttpServlet {
 		//1.获取页面的登陆信息
 		String username = request.getParameter("username");
 		String password = request.getParameter("password");
+		String checkcode_client = request.getParameter("checkcode");
+		
+		//验证码校验
+		String checkcode_session = (String) request.getSession().getAttribute("checkcode_session");
+		if(!checkcode_session.equals(checkcode_client)) {
+			request.setAttribute("logininfo", "验证码错误");
+			request.getRequestDispatcher("/login.jsp").forward(request, response);
+			return;
+		}
+		
 		//2.获取数据库中的信息
 		QueryRunner runner = new QueryRunner(DataSourceUtils.getDataSource());
 		String sql = "select * from user where username=? and password=?";

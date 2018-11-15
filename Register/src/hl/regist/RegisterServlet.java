@@ -21,6 +21,16 @@ public class RegisterServlet extends HttpServlet {
 		//设置request的编码防止乱码------只适合  post 方式
 		request.setCharacterEncoding("UTF-8");
 		
+//		String checkcode_client = request.getParameter("checkcode");
+//		
+//		//验证码校验
+//		String checkcode_session = (String) request.getSession().getAttribute("checkcode_session");
+//		if(!checkcode_session.equals(checkcode_client)) {
+//			request.setAttribute("logininfo", "验证码错误");
+//			request.getRequestDispatcher("/register.html").forward(request, response);
+//			return;
+//		}
+		
 		//get方式的乱码解决方法    先用iso8859-1编码，再用utf-8解码
 //		String username = request.getParameter("user");
 //		username = new String(username.getBytes("iso8859-1"),"UTF-8");

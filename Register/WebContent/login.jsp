@@ -54,11 +54,6 @@
 			alert("密码不能为空");
 			return false;
 		}
-		var yzmValue = document.getElementById("inputPassword").value;
-		if(){
-			alert("验证码错误！")
-			return false;
-		}
 		
 	}
 </script>
@@ -100,7 +95,7 @@
 						<div class="form-group">
 							<label for="inputPassword3" class="col-sm-2 control-label">验证码</label>
 							<div class="col-sm-3">
-								<input type="text" class="form-control" id="inputPassword"
+								<input type="text" class="form-control" id="inputPassword" name="checkcode"
 									placeholder="请输入验证码">
 							</div>
 							<div class="col-sm-3">

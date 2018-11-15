@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
 <fullyQualifiedTypeName name="web.DataSourceUtils"/>
-<fullyQualifiedTypeName name="java.lang.Object"/>
 <fullyQualifiedTypeName name="org.apache.commons.dbutils.handlers.BeanHandler"/>
-<fullyQualifiedTypeName name="java.util.Date"/>
 <fullyQualifiedTypeName name="java.io.PrintWriter"/>
 <fullyQualifiedTypeName name="java.io.InputStream"/>
 <fullyQualifiedTypeName name="java.io.FileInputStream"/>
@@ -23,8 +21,15 @@
 <fullyQualifiedTypeName name="java.sql.Connection"/>
 <fullyQualifiedTypeName name="hl.regist.User"/>
 <fullyQualifiedTypeName name="org.apache.commons.beanutils.BeanUtils"/>
-<fullyQualifiedTypeName name="org.apache.commons.dbutils.QueryRunner"/>
 <fullyQualifiedTypeName name="javax.sql.DataSource"/>
 <fullyQualifiedTypeName name="java.util.UUID"/>
+<fullyQualifiedTypeName name="org.apache.commons.dbutils.QueryRunner"/>
+<fullyQualifiedTypeName name="hl.regist.DataSourceUtils"/>
+<fullyQualifiedTypeName name="java.lang.Object"/>
+<fullyQualifiedTypeName name="org.apache.commons.dbutils.handlers.MapHandler"/>
+<fullyQualifiedTypeName name="java.util.Date"/>
+<fullyQualifiedTypeName name="java.text.SimpleDateFormat"/>
+<fullyQualifiedTypeName name="javax.servlet.http.HttpSession"/>
+<fullyQualifiedTypeName name="javax.servlet.http.Cookie"/>
 <fullyQualifiedTypeName name="java.lang.String"/>
 </qualifiedTypeNameHistroy>
